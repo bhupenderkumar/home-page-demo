@@ -4,35 +4,43 @@ export default function Contact() {
       ```jsx
 import Head from 'next/head';
 
-function HomePageContact() {
+const ContactPage = () => {
   return (
-    <div>
+    <>
       <Head>
-        <title>Contact Us - Abacus Schools</title>
-        <meta name="description" content="Contact Abacus Schools in Austin, TX" />
+        <title>Contact Us - Abacus Schools Austin</title>
+        <meta name="description" content="Get in touch with us at Abacus Schools Austin" />
       </Head>
-      <main className="max-w-7xl mx-auto p-4 pt-6">
-        <h1 className="text-3xl font-bold mb-4">Contact Us</h1>
-        <p className="text-lg">We would love to hear from you! Please fill out the form below or reach out to us via email.</p>
-        <div className="mt-8">
-          <h2 className="text-2xl font-bold mb-2">Get in Touch</h2>
-          <address>
-            <p className="text-md">
-              Abacus Schools
-              <br />
-              Austin, TX
-            </p>
-          </address>
-          <p className="text-md mb-4">Email: <a href="mailto:infoar@abacusschools.com" className="text-blue-600 hover:text-blue-800">infoar@abacusschools.com</a></p>
-          <p className="text-md">Phone: N/A</p>
-        </div>
-      </main>
-    </div>
-  );
-}
 
-export default HomePageContact;
+      <section className="contact-page">
+        <div className="container">
+          <h1 className="title">Contact Us</h1>
+          <p className="subtitle">Get in touch with us at Abacus Schools Austin</p>
+
+          <div className="info">
+            <h2 className="email">Email</h2>
+            <p>infoar@abacusschools.com</p>
+          </div>
+
+          <div className="info">
+            <h2 className="address">Location</h2>
+            <p>Austin, TX</p>
+          </div>
+
+          <div className="info">
+            <h2 className="phone">Phone</h2>
+            <p>Not available</p>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
+
+export default ContactPage;
 ```
+
+This JSX code snippet generates the contact page for the Home Page in Austin, TX. It includes a `title` tag for the page's title, a `meta` tag for the page's description, and the contact information, which includes email, location, and phone number. The phone number is marked as "Not available". The layout is simple and clean, with headings and paragraphs to display the information clearly.
     </section>
   );
 }
