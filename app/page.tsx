@@ -11,60 +11,57 @@ export default function Home() {
     <title>Austin Private School</title>
 </head>
 <body>
-    <header class="hero">
-        <div class="hero-content">
-            <h1>Empowering Minds, Enriching Lives</h1>
-            <p><strong>Austin Private School</strong> is a premier educational institution dedicated to fostering academic excellence, creativity, and character development in a nurturing environment.</p>
-            <button>Learn More</button>
-        </div>
-        <div class="hero-image">
-            <img src="image/path/to/hero-image.jpg" alt="Austin Private School">
-        </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Academics</a></li>
+                <li><a href="#">Admissions</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
+        <section class="hero">
+            <h1 class="hero-headline">Empowering Young Minds in Austin, Texas</h1>
+            <p class="hero-description">At Austin Private School, we foster a community of lifelong learners, innovators, and leaders. Our rigorous academic programs, dedicated faculty, and supportive environment provide the perfect blend for students to thrive.</p>
+            <button class="hero-learn-more">Learn More</button>
+        </section>
         <section class="feature-section">
-            <h2>What Sets Us Apart</h2>
+            <h2>Our Unique Features</h2>
             <div class="feature-grid">
-                <div class="feature-box">
-                    <h3>Academic Excellence</h3>
-                    <p>Our expert faculty provides personalized attention to ensure each student reaches their full potential.</p>
+                <div class="feature-item">
+                    <i class="fas fa-book"></i>
+                    <h3>Personalized Learning</h3>
+                    <p>Our teachers work closely with students to tailor their education to meet their individual needs and interests.</p>
                 </div>
-                <div class="feature-box">
+                <div class="feature-item">
+                    <i class="fas fa-users"></i>
                     <h3>Small Class Sizes</h3>
-                    <p>With a maximum of 15 students per class, our students enjoy a more engaging and effective learning experience.</p>
+                    <p>With an average class size of 15, our students receive the attention and support they need to succeed.</p>
                 </div>
-                <div class="feature-box">
+                <div class="feature-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>College Preparation</h3>
+                    <p>Our college counseling program helps students navigate the college application process and secure top scholarships.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-robot"></i>
                     <h3>State-of-the-Art Facilities</h3>
-                    <p>Our campus features cutting-edge technology, modern classrooms, and a vast library to support student success.</p>
-                </div>
-                <div class="feature-box">
-                    <h3>Arts and Athletics</h3>
-                    <p>We offer a wide range of extracurricular activities and sports programs to nurture students' passions and talents.</p>
+                    <p>Our modern campus is equipped with cutting-edge technology, including interactive whiteboards, 3D printers, and virtual reality labs.</p>
                 </div>
             </div>
-        </section>
-        <section class="testimonials-section">
-            <h2>Our Community</h2>
-            <div class="testimonial-grid">
-                <div class="testimonial-box">
-                    <p>&quot;Austin Private School has been a game-changer for our family. The teachers and staff are caring and supportive, and the academics are top-notch.&quot;</p>
-                    <p>— Sarah J.</p>
-                </div>
-                <div class="testimonial-box">
-                    <p>&quot;The sense of community at Austin Private School is incredible. Our child has made lifelong friends and is thriving academically and socially.&quot;</p>
-                    <p>— Mark K.</p>
-                </div>
-            </div>
-        </section>
-        <section class="call-to-action-section">
-            <h2>Take the First Step</h2>
-            <p>Join our vibrant community of learners and start exploring the endless possibilities at Austin Private School.</p>
-            <button>Apply Now</button>
         </section>
     </main>
+    <footer>
+        <p>&copy; 2023 Austin Private School. All rights reserved.</p>
+    </footer>
 </body>
 </html>
 ```
+
+Note: This HTML code assumes the use of Font Awesome for the icons. If you don't have Font Awesome installed, you can replace the icons with plain text or use a different icon library.
       </section>
     </>
   );
