@@ -3,54 +3,46 @@ export default function Download() {
     <section className="section">
       ```jsx
 import Head from 'next/head';
-import Image from 'next/image';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
-function DownloadPage() {
+const Download = () => {
   return (
     <>
       <Head>
-        <title>Abacus School | Download</title>
-        <meta name="description" content="Download resources from Abacus School" />
+        <title>Download | Abacus School</title>
+        <meta name="description" content="Download page for Abacus School" />
       </Head>
-      <main className="max-w-screen-lg mx-auto p-4 pt-6 md:p-6">
-        <header className="text-center mb-6">
-          <h1 className="text-3xl font-bold mb-2">Download</h1>
-          <p className="text-lg text-gray-600">Access our resources and materials from Abacus School, Austin, TX</p>
-        </header>
-        <section className="flex flex-col items-center">
-          <div className="max-w-md mx-auto p-4 md:p-6 lg:p-8 mb-6 bg-white shadow-md rounded-lg">
-            <h2 className="text-2xl font-bold mb-4">Download Our Brochure</h2>
-            <p className="text-lg text-gray-600">Get to know Abacus School and our academic programs</p>
-            <div className="flex justify-center mt-6">
-              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                <a href="#" download="AbacusSchoolBrochure.pdf" className="text-lg">Download Brochure</a>
-              </button>
+      <Header />
+      <main className="container mx-auto p-4 pt-6 md:p-6">
+        <section className="text-gray-600 body-font">
+          <div className="container mx-auto p-4 pt-6 md:p-6">
+            <h1 className="text-3xl text-gray-900 font-bold title-font mb-4">Download</h1>
+            <p className="text-gray-600 mb-8">Get access to our school's information and resources.</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+              <div className="bg-white rounded-lg shadow-lg p-8">
+                <h2 className="text-lg text-gray-900 font-bold mb-2">Info Packet</h2>
+                <p className="text-gray-600">Our comprehensive info packet includes everything you need to know about Abacus School.</p>
+                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Download Info Packet</button>
+              </div>
+              <div className="bg-white rounded-lg shadow-lg p-8">
+                <h2 className="text-lg text-gray-900 font-bold mb-2">Application Form</h2>
+                <p className="text-gray-600">Get started on your application today with our easy-to-use form.</p>
+                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Download Application Form</button>
+              </div>
             </div>
-          </div>
-          <div className="max-w-md mx-auto p-4 md:p-6 lg:p-8 bg-white shadow-md rounded-lg">
-            <h2 className="text-2xl font-bold mb-4">Get Our Newsletter</h2>
-            <p className="text-lg text-gray-600">Stay updated on our latest news and events</p>
-            <form action="#" className="flex flex-col items-center mt-6">
-              <input type="email" className="w-full p-2 mb-4 border border-gray-400 rounded-lg" placeholder="Enter your email" />
-              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                Subscribe
-              </button>
-            </form>
           </div>
         </section>
       </main>
-      <footer className="text-center p-4">
-        <p>&copy; 2024 Abacus School. All rights reserved.</p>
-        <p>Contact us at <a href="mailto:infoar@abacusschools.com" className="text-blue-500">infoar@abacusschools.com</a></p>
-      </footer>
+      <Footer />
     </>
   );
-}
+};
 
-export default DownloadPage;
+export default Download;
 ```
 
-This JSX code represents a basic download page for Abacus School. It includes a header, a section for downloading the school brochure, a section for subscribing to the school's newsletter, and a footer with contact information. The code uses Tailwind CSS classes for styling and layout, but you can adjust these as needed to fit your specific design.
+This JSX code creates a basic Next.js page component for the download page. The page includes a header, a main section with a title and a grid of two columns, each containing a button to download a respective resource (info packet and application form). The footer is also included.
     </section>
   );
 }
