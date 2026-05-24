@@ -7,61 +7,69 @@ export default function Home() {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Austin Private School</title>
+    <title>Legacy Private School | Empowering Students to Excel</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Academics</a></li>
-                <li><a href="#">Admissions</a></li>
-                <li><a href="#">Community</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#academics">Academics</a></li>
+                <li><a href="#admissions">Admissions</a></li>
+                <li><a href="#contact">Contact Us</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="hero">
-            <h1 class="hero-headline">Empowering Young Minds in Austin, Texas</h1>
-            <p class="hero-description">At Austin Private School, we foster a community of lifelong learners, innovators, and leaders. Our rigorous academic programs, dedicated faculty, and supportive environment provide the perfect blend for students to thrive.</p>
-            <button class="hero-learn-more">Learn More</button>
+        <section class="hero-section">
+            <h1>Welcome to Legacy Private School</h1>
+            <p>Empowering students to excel in academics, arts, and athletics since 1995.</p>
         </section>
         <section class="feature-section">
-            <h2>Our Unique Features</h2>
-            <div class="feature-grid">
-                <div class="feature-item">
-                    <i class="fas fa-book"></i>
-                    <h3>Personalized Learning</h3>
-                    <p>Our teachers work closely with students to tailor their education to meet their individual needs and interests.</p>
-                </div>
-                <div class="feature-item">
-                    <i class="fas fa-users"></i>
-                    <h3>Small Class Sizes</h3>
-                    <p>With an average class size of 15, our students receive the attention and support they need to succeed.</p>
-                </div>
-                <div class="feature-item">
-                    <i class="fas fa-graduation-cap"></i>
-                    <h3>College Preparation</h3>
-                    <p>Our college counseling program helps students navigate the college application process and secure top scholarships.</p>
-                </div>
-                <div class="feature-item">
-                    <i class="fas fa-robot"></i>
-                    <h3>State-of-the-Art Facilities</h3>
-                    <p>Our modern campus is equipped with cutting-edge technology, including interactive whiteboards, 3D printers, and virtual reality labs.</p>
-                </div>
-            </div>
+            <h2>Our Mission</h2>
+            <p>We strive to create a supportive learning environment that fosters intellectual curiosity, creativity, and personal growth.</p>
+            <ul>
+                <li>Personalized learning approach to meet individual needs</li>
+                <li>Experienced and passionate educators dedicated to student success</li>
+                <li>State-of-the-art facilities and resources</li>
+                <li>Strong focus on character development and community service</li>
+            </ul>
         </section>
+        <section class="highlight-section">
+            <h2>Key Highlights</h2>
+            <div class="highlight">
+                <i class="far fa-graduation-cap"></i>
+                <h3>College Acceptance Rate: 95%</h3>
+                <p>Legacy Private School students have been accepted to top universities nationwide.</p>
+            </div>
+            <div class="highlight">
+                <i class="fas fa-chalkboard"></i>
+                <h3>Average Class Size: 15 students</h3>
+                <p>Our small class sizes ensure personalized attention and instruction.</p>
+            </div>
+            <div class="highlight">
+                <i class="fas fa-trophy"></i>
+                <h3>Athletic Team Championships: 10+ titles</hassistant<|end_header_id|>
+
+```html
+            <p>Legacy Private School's athletic teams have a strong reputation for excellence.</p>
+        </div>
+    </section>
+    <section class="call-to-action">
+        <h2>Take the First Step</h2>
+        <p>Learn more about Legacy Private School and our admissions process.</p>
+        <button><a href="admissions">Apply Now</a></button>
+    </section>
     </main>
     <footer>
-        <p>&copy; 2023 Austin Private School. All rights reserved.</p>
+        <p>&copy; 2023 Legacy Private School. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
 ```
-
-Note: This HTML code assumes the use of Font Awesome for the icons. If you don't have Font Awesome installed, you can replace the icons with plain text or use a different icon library.
       </section>
     </>
   );
