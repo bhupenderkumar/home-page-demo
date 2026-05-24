@@ -3,69 +3,53 @@ export default function About() {
     <section className="section">
       ```jsx
 import Head from 'next/head';
-import Link from 'next/link';
+import Image from 'next/image';
 
-function AboutPage() {
+const AboutPage = () => {
   return (
-    <>
+    <div className="max-w-7xl mx-auto p-4">
       <Head>
-        <title>About Us | Abacus Schools Austin</title>
-        <meta name="description" content="Learn about Abacus Schools Austin's mission, values, and history." />
+        <title>About Us | Abacus School Austin</title>
+        <meta name="description" content="Learn about our mission, values, and vision at Abacus School Austin" />
+        <meta name="keywords" content="Abacus School, Austin, TX, about us, mission, values, vision" />
       </Head>
 
-      <header className="hero">
-        <div className="container">
-          <h1>About Us</h1>
-          <p>Welcome to Abacus Schools Austin, a leading educational institution in the heart of Texas.</p>
-          <Link href="/">
-            <a>Home</a>
-          </Link>
-        </div>
+      <header className="text-center mb-8">
+        <h1 className="text-3xl font-bold mb-4">About Us</h1>
+        <p className="text-gray-600">Welcome to Abacus School Austin, where we empower young minds to reach their full potential.</p>
       </header>
 
-      <main>
-        <section className="about">
-          <div className="container">
-            <h2>Our Mission</h2>
-            <p>At Abacus Schools Austin, our mission is to provide a world-class education that fosters intellectual curiosity, creativity, and a passion for lifelong learning.</p>
-          </div>
+      <main className="grid grid-cols-1 gap-4 lg:grid-cols-2">
+        <section className="flex flex-col justify-center items-center">
+          <Image src="/about-us-image.jpg" alt="Abacus School Austin" width={800} height={600} />
+          <p className="text-lg font-bold mt-4">Our Mission</p>
+          <p className="text-gray-600">Our mission is to provide a nurturing and stimulating environment that fosters academic excellence, creativity, and social responsibility.</p>
         </section>
 
-        <section className="values">
-          <div className="container">
-            <h2>Our Values</h2>
-            <ul>
-              <li>Academic Excellence</li>
-              <li>Collaborative Learning</li>
-              <li>Community Engagement</li>
-              <li>Emotional Intelligence</li>
-            </ul>
-          </div>
-        </section>
-
-        <section className="contact">
-          <div className="container">
-            <h2>Get in Touch</h2>
-            <p>Contact us to learn more about Abacus Schools Austin or to schedule a tour.</p>
-            <p>Email: <a href="mailto:infoar@abacusschools.com">infoar@abacusschools.com</a></p>
-            <p>Address: N/A</p>
-          </div>
+        <section className="flex flex-col justify-center items-center">
+          <p className="text-lg font-bold mt-4">Our Values</p>
+          <ul className="list-disc ml-4">
+            <li className="text-gray-600">Respect</li>
+            <li className="text-gray-600">Responsibility</li>
+            <li className="text-gray-600">Empathy</li>
+            <li className="text-gray-600">Integrity</li>
+          </ul>
         </section>
       </main>
 
-      <footer>
-        <div className="container">
-          <p>&copy; 2024 Abacus Schools Austin. All rights reserved.</p>
-        </div>
+      <footer className="text-center mt-8">
+        <p className="text-gray-600">
+          <a href="mailto:infoar@abacusschools.com" target="_blank" rel="noopener noreferrer">infoar@abacusschools.com</a>
+        </p>
       </footer>
-    </>
+    </div>
   );
-}
+};
 
 export default AboutPage;
 ```
 
-This JSX code generates the about page for the Abacus Schools Austin website, including a hero section, about section, values section, and contact section. The page does not include a phone number, as per your request. The email address is displayed for visitors to contact the school. The address is also not displayed.
+This JSX code generates a basic about page for Abacus School Austin. It includes a header with a title and a brief introduction, a main section with two columns, and a footer with the school's email address.
     </section>
   );
 }
